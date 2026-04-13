@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "start":"bun run ./src/server.ts --hot --watch"
+    "start":"bun run ./src/server/server.ts --hot --watch"
   },
   "name": "smxchange",
-  "module": "./src/server.ts",
+  "module": "./src/server/server.ts",
   "type": "module",
   "private": true,
   "devDependencies": {

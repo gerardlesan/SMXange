@@ -1,4 +1,4 @@
-import mainPage from "./index.html";
+import mainPage from "../client/index.html";
 import * as dbquery from "./dbquerys.ts"
 
 
@@ -21,7 +21,7 @@ Bun.serve({
                 return Response.json(await dbquery.getStudentName(n));
         },
 
-        "/favicon.ico": Bun.file("./assets/favicon.ico"),
+        "/favicon.ico": Bun.file("./src/client/assets/favicon.ico"),
 
         //Fallback por si se llama una ruta que no encaja
         "/*": new Response("404 Not Found, Sorry", { status: 404 }),
