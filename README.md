@@ -14,6 +14,8 @@ Podeu apagar el servidor o tancar l'ordinador en cuansevol moment, no hi ha perd
 
 Es possible que per a cambis a backend s'hagi de tancar i tornar a engegar el servidor.
 
+EL SERVIDOR ENCARA NO ESTÁ PROBAT A WINDOWS. SI EL PROBES I ET FUNCIONA, BORRA AQUESTA LINEA.
+
 ---
 
 ## Base de dades

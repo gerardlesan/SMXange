@@ -1,5 +1,5 @@
 import mainPage from "../client/index.html";
-import * as dbquery from "./dbquerys.ts"
+import * as api from "./api/api_index"
 
 
 //Aixó es el core del servidor web
@@ -15,12 +15,9 @@ Bun.serve({
         //API (La Application Programing Interface permite que el servidor interactue con el cliente, haciendo cosas como guardar o traer datos de la Base de Datos)
         
         //Para el login, el json enviado por el cliente debería contener
-        "/api/getUser": async (req) => {
-                const response = await req.json();
-                const n = parseInt(response);
-                return Response.json(await dbquery.getStudentName(n));
-        },
+        "/verifyUser": async (req) => {return Response.json(api.loginVerification(req.json))},
 
+        //Servim el favicon (El incone de la página) quan el servidor el demana
         "/favicon.ico": Bun.file("./src/client/assets/favicon.ico"),
 
         //Fallback por si se llama una ruta que no encaja
