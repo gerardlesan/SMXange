@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "bun run ./src/server/server.ts --hot --watch"
+  },
+  "name": "smxchange",
+  "module": "./src/server/server.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0"
+  }
+}
