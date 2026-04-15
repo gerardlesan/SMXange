@@ -1,2 +1,13 @@
-BOSSSSSSSSSSSS
+<!DOCTYPE html>
+<html leng="esp"
+<head>
+ <title>Page Title</title>
+</head>
+<body>
 
+<h3>Usuario</h3>
+<h3>Contraseña</h3>
+<h2>Registrarse</h2>
+<h2>Iniciar sesion</h2>
+<h2>Has olvidado tu cntraseña?</h2>
+</body>
