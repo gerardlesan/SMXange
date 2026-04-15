@@ -1,9 +1,8 @@
-import { db } from "./db_connection.ts"
 
 
-export async function loginVerification(req: any){
+export async function loginVerification(req: Request){
 
-    const [credentials] = await req.json();
+    const credentials = await req.json();
 
     if (!credentials.uName || !credentials.uPassword) {
         return Response.json(
