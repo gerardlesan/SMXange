@@ -1,4 +1,5 @@
-import mainPage from "../client/index.html";
+import loginPage from "../client/index.html";
+import forgotPswd from "../client/forgotPswd.html"
 import * as api from "./api/api_index"
 
 
@@ -10,12 +11,15 @@ Bun.serve({
     //Cada Entrada dicta que tiene que hacer este servidor cuando reciva una solicitud de GET o POST en esa dirección desde el cliente
     routes: {
         //Paginas
-        "/": mainPage,
+        "/": loginPage,
 
         //API (La Application Programing Interface permite que el servidor interactue con el cliente, haciendo cosas como guardar o traer datos de la Base de Datos)
         
-        //Para el login, el json enviado por el cliente debería contener
-        "/verifyUser": async (req) => {return Response.json(api.loginVerification(req.json))},
+        "/forgotPswd": forgotPswd,
+
+        "/api/login": async (req) => {
+            return await api.loginVerification(req);
+        },
 
         //Servim el favicon (El incone de la página) quan el servidor el demana
         "/favicon.ico": Bun.file("./src/client/assets/favicon.ico"),
