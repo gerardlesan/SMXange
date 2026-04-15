@@ -1,5 +1,8 @@
 //Funció de mostra per ensenyar com podria el codi de client cridar a el servidor a través de una ruta de API
+<<<<<<< HEAD
 //Aixo es una prova
+=======
+>>>>>>> 3aabd78 (Login Proper implementation (broken atm))
 const form = document.getElementById("login") as HTMLFormElement;
 
 async function sendData() {
