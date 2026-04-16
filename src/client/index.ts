@@ -1,4 +1,5 @@
 //Funció de mostra per ensenyar com podria el codi de client cridar a el servidor a través de una ruta de API
+//Aixo es una prova
 const form = document.getElementById("login") as HTMLFormElement;
 
 async function sendData() {
